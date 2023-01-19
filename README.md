@@ -16,7 +16,8 @@ The **"Hello, World!"** is a program built using [ReactJS](https://reactjs.org/)
    ```
 2. Setup & activate python env
    ```bash
-   python3 -m venv env
+   cd <this-repo>
+   python -m venv env
    source env/Scripts/activate
    ```
 3. Install django
