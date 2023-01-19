@@ -2,9 +2,9 @@
 
 The **"Hello, World!"** is a program built using [ReactJS](https://reactjs.org/) for clientside (frontend) & [Django](https://www.djangoproject.com/) for serverside (backend).
 
-**React** is a declarative, efficient, and flexible front-end JavaScript library for building user interfaces based on UI components.
+**[React](https://reactjs.org/)** is a declarative, efficient, and flexible front-end JavaScript library for building user interfaces based on UI components.
 
-**Django** is a free high-level, Python-based web framework that follows the model–template–views architectural patterns & enables rapid development of secure and maintainable websites
+**[Django](https://www.djangoproject.com/)** is a free high-level, Python-based web framework that follows the model–template–views architectural patterns & enables rapid development of secure and maintainable websites
 
 <br />
 
