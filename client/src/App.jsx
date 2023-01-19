@@ -1,23 +1,24 @@
-import { useState } from 'react';
-import reactLogo from './assets/img/react.svg';
+import { useEffect, useState } from 'react';
+import Home from './components/Home';
+import WebFont from 'webfontloader';
 
 export default function App() {
   const [count, setCount] = useState(1);
+  const increaseCount = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Nunito'],
+      },
+    });
+  }, []);
 
   return (
     <>
-      <div className='container'>
-        <img src={reactLogo} className='logo' alt='react-logo' />
-        <h1 title='title'> Hello, World! </h1>
-        <button
-          className='btn'
-          onClick={() => {
-            setCount((prevCount) => (prevCount += 1));
-          }}
-        >
-          Count : {count}
-        </button>
-      </div>
+      <Home count={count} increaseCount={increaseCount} />
     </>
   );
 }

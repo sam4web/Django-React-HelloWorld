@@ -121,6 +121,7 @@ STATIC_URL = "assets/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "client/dist/assets",
+    "client/dist",
 ]
 
 # Default primary key field type

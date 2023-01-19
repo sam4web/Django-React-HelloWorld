@@ -1,0 +1,117 @@
+.HomePage {
+  overflow-x: hidden;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.section-container {
+  padding: 70px 10px;
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+.section__title {
+  font-size: 40px;
+}
+
+.section__description {
+  font-size: 18px;
+  line-height: 22.5px;
+  margin-bottom: 15px;
+}
+
+.section__summary {
+  font-size: 19px;
+  word-spacing: 1px;
+  color: var(--primary-color);
+}
+
+.redirect {
+  color: inherit;
+  font-size: 18.5px;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 600;
+  transition: transform 150ms linear;
+}
+
+.redirect:hover {
+  transform: translateY(-2px);
+}
+
+.redirect__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.react-icon {
+  width: 140px;
+  height: 140px;
+  margin: 35px auto;
+  animation-name: logo-spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  user-select: none;
+}
+
+.background-icon {
+  z-index: -1;
+  user-select: none;
+  color: var(--grey);
+  position: absolute;
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
+
+.background-icon.bg-django {
+  top: 10%;
+  right: 1.2%;
+  width: 125px;
+  height: 125px;
+}
+
+.background-icon.bg-react {
+  bottom: 15%;
+  left: -5%;
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-container {
+    padding: 60px 10px;
+  }
+
+  .section__title {
+    font-size: 34px;
+  }
+
+  .react-icon {
+    margin: 20px auto;
+    width: 85px;
+    height: 85px;
+  }
+
+  .background-icon.bg-django {
+    width: 80px;
+    height: 80px;
+  }
+
+  .background-icon.bg-react {
+    left: -10%;
+    width: 90px;
+    height: 90px;
+  }
+}

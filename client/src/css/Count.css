@@ -1,0 +1,28 @@
+.CountBtn {
+  width: 100%;
+  max-width: 120px;
+  font-size: 17.5px;
+  font-family: inherit;
+  padding: 9px;
+  margin: 10px auto;
+  border: 2px solid transparent;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 2.5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  transition: transform 230ms linear, background-color 250ms linear,
+    color 100ms ease-in-out;
+}
+
+.CountBtn:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-color);
+  background-color: transparent;
+  color: var(--dark);
+}
+
+.count-number {
+  font-weight: 600;
+  margin-left: 5px;
+}
